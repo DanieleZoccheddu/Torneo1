@@ -19,4 +19,20 @@ public class Attacco {
                 ", tipo='" + tipo + '\'' +
                 '}';
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getQuantitaDanno() {
+        return quantitaDanno;
+    }
+
+    public double getProbabilitaASegno() {
+        return probabilitaASegno;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
 }
