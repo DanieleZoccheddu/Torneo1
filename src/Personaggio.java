@@ -21,7 +21,7 @@ public class Personaggio {
         this.schivata = schivata;
         this.razza=razza;
         listaAttacchi= new ArrayList<>();
-        attaccoBase= new Attacco("Attacco Base", this.forzaFisica, 0.4+rand.nextDouble(0.3));
+        attaccoBase= new Attacco("Attacco Base", this.forzaFisica, 0.4+rand.nextDouble()*0.3);
     }
 
     @Override
