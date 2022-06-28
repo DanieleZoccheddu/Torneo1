@@ -1,0 +1,3 @@
+public enum Razza {
+    UMANO, SAYAN, DEMONE, ALIENO, CYBORG, NAMECCIANO
+}
