@@ -10,6 +10,8 @@ public class Personaggio {
     private ArrayList<Attacco> listaAttacchi;
     private Attacco attaccoBase;
 
+    private double puntiVitaIniziali;
+
 
     private final Enum <Razza> razza;
 
@@ -21,6 +23,7 @@ public class Personaggio {
         this.resistenzaFisica = resistenzaFisica;
         this.schivata = schivata;
         this.razza=razza;
+        this.puntiVitaIniziali = puntiVita;
         listaAttacchi= new ArrayList<>();
         attaccoBase= new Attacco("Attacco Base", this.forzaFisica, 0.4+rand.nextDouble()*0.3);
     }
@@ -75,8 +78,9 @@ public class Personaggio {
         return listaAttacchi;
     }
 
-    public void setListaAttacchi(ArrayList<Attacco> listaAttacchi) {
-        this.listaAttacchi = listaAttacchi;
+    public void setListaAttacchi(Attacco a) {
+
+        this.listaAttacchi.add(a);
     }
 
     public Attacco getAttaccoBase() {
@@ -89,6 +93,10 @@ public class Personaggio {
 
     public Enum<Razza> getRazza() {
         return razza;
+    }
+
+    public double getPuntiVitaIniziali() {
+        return puntiVitaIniziali;
     }
 
     public void attacca(Personaggio p2){

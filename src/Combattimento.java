@@ -11,22 +11,31 @@ public class Combattimento {
 
     }
 
-    public Personaggio combatti(){
+    public void combatti(){
         boolean chiInizia;
         chiInizia = random.nextBoolean();
 
         while (p1.getPuntiVita() > 0 && p2.getPuntiVita() > 0 ){
             if(chiInizia){
-                //attacca p1
+                p1.attacca(p2);    //attacca p1
 
             }
             else{
-                //attacca p2
+                p2.attacca(p1);    //attacca p2
             }
 
             chiInizia = !chiInizia;
 
         }
+        if(p1.getPuntiVita() > 0){
+            System.out.println("Ha vinto: " + p1.getNome());
+        }
+        else{
+            System.out.println("Ha vinto: " + p2.getNome());
+        }
+
+        p1.setPuntiVita(p1.getPuntiVitaIniziali());
+        p2.setPuntiVita(p2.getPuntiVitaIniziali());
 
     }
 
