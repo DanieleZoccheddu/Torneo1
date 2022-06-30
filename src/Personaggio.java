@@ -114,11 +114,11 @@ public class Personaggio {
                 System.out.println("L'attacco va a segno");
                 p2.setPuntiVita((p2.getPuntiVita() - (forzaFisica * p2.getResistenzaFisica())));
                 System.out.println("Danno ricevuto " + forzaFisica * p2.getResistenzaFisica() );
-                System.out.println("Vita di " + p2.getNome() + ": " + p2.getPuntiVita());
+                System.out.println("Vita di " + p2.getNome() + ": " + p2.getPuntiVita()+"\n");
             }
             else
             {
-                System.out.println("Attacco fallito");
+                System.out.println("Attacco fallito\n");
             }
 
         }
@@ -133,11 +133,11 @@ public class Personaggio {
                 System.out.println("L'attacco " + listaAttacchi.get(scegliMossa).getNome() +  " va a segno");
                 p2.setPuntiVita((p2.getPuntiVita() - (listaAttacchi.get(scegliMossa).getQuantitaDanno() * p2.getResistenzaFisica())));
                 System.out.println("Danno ricevuto " + listaAttacchi.get(scegliMossa).getQuantitaDanno() * p2.getResistenzaFisica() );
-                System.out.println("Vita di " + p2.getNome() + ": " + p2.getPuntiVita());
+                System.out.println("Vita di " + p2.getNome() + ": " + p2.getPuntiVita()+"\n");
             }
             else
             {
-                System.out.println("Attacco fallito");
+                System.out.println("Attacco fallito\n");
             }
 
         }
