@@ -5,7 +5,7 @@ public class Main {
         System.out.println(p1);
         Attacco a1 = new Attacco("Testata", 50, 0.5);
         Attacco a2 = new Attacco("Gomitata", 50, 0.5);
-        Attacco a3 = new Attacco("Calcio nelle palle", 999, 0.5);
+        Attacco a3 = new Attacco("Colpo basso", 999, 0.5);
         Attacco a4 = new Attacco("Dito nell'occhio", 50, 0.5);
         Attacco a5 = new Attacco("Kamehameha", 600, 0.5);
         Attacco a6 = new Attacco("Coltellata", 5, 0.5);

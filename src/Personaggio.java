@@ -124,7 +124,7 @@ public class Personaggio {
         }
         else{
             //scaglia attacco speciale
-            System.out.println(nome + " sta usando l'attacco figo");
+            System.out.println(nome + " sta usando l'attacco speciale");
 
             int scegliMossa = random.nextInt(4);
             percentualeRiuscita = listaAttacchi.get(scegliMossa).getProbabilitaASegno() * p2.schivata;
